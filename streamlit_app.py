@@ -9,7 +9,7 @@ if st.query_params.get("version") == 'heidi':
 st.title("💬 Get into the best MBA school")
 st.write("We are a diverse group of 36 elite business school insiders, including former admissions directors from the world's top schools, each offering unique expertise and insights, and together offering unrivalled depth and breadth of experience as a team.")
 st.write("Chat privately with our AI about your background and MBA goals, to work out who is best placed to help you.")
-st.warning('This demo AI agent is currently trained on fictional movie characters, not real MBA consultants yet!', icon="⚠️")
+st.warning('This demo AI agent is trained on fictional movie character data, rather than proprietary MBA consultant data.', icon="⚠️")
 
 if "answers" not in st.session_state: 
     st.session_state.answers = []
