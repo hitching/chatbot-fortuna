@@ -97,15 +97,17 @@ if st.session_state.answers:
 
             if 'Heidi Hillis' in answer:
                 st.html('<hr>')
+                st.html('<b>Recent reviews</b>')
                 st.html('<em>"Excellent Advisor - Stanford GSB Admit (Class Of 2027)"</em>')
                 st.html('⭐⭐⭐⭐⭐ <small><a href="https://poetsandquants.com/consultant/heidi-hillis/" target="_blank">3 weeks ago</a></small>')
 
-                st.html('<hr>')
                 st.html('<em>"Best Coach I Could Have Asked For! Best Coach! (Stanford / Columbia)"</em>')
                 st.html('⭐⭐⭐⭐⭐ <small><a href="https://poetsandquants.com/consultant/heidi-hillis/" target="_blank">1 month ago</a></small>')
+
+                st.html('<a href="https://poetsandquants.com/consultant/heidi-hillis/" target="_blank">More reviews...</a>')
 
                 st.html('<hr>')
                 st.html('<b>Recent articles by Heidi</b>')
                 st.html('<a href="https://fortunaadmissions.com/how-to-create-a-career-vision-for-your-mba-application/" target="_blank">How to Create a Career Vision For Your MBA Application</a>')
                 st.html('<a href="https://fortunaadmissions.com/how-to-create-an-mba-career-vision-long-term-vs-short-term-goals/" target="_blank">MBA Goals: Long Term Vs. Short Term Career Vision</a>')
-                st.html('<a href="https://fortunaadmissions.com/author/heidi/" target="_blank">More...</a>')
+                st.html('<a href="https://fortunaadmissions.com/author/heidi/" target="_blank">More articles...</a>')
