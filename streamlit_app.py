@@ -70,7 +70,7 @@ if st.session_state.answers:
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             border-radius: 5px;
-            height: 400px;
+            height: 500px;
             overflow: scroll;
         }
         </style>
@@ -97,5 +97,6 @@ if st.session_state.answers:
 
             if 'Heidi Hillis' in answer:
                 st.html('<hr>')
-                st.button('More about Heidi', type="secondary")
-                st.button('Heidi\'s blog posts', type="secondary")
+                st.html('<b>Recent articles by Heidi</b>')
+                st.html('<a href="https://fortunaadmissions.com/how-to-create-a-career-vision-for-your-mba-application/" target="_blank">How to Create a Career Vision For Your MBA Application</a>')
+                st.html('<a href="https://fortunaadmissions.com/author/heidi/" target="_blank">More...</a>')
