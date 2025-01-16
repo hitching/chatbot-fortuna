@@ -9,7 +9,7 @@ if st.query_params.get("version") == 'heidi':
 st.title("💬 Get into the best MBA school")
 st.write("We are a diverse group of 36 elite business school insiders, including former admissions directors from the world's top schools, each offering unique expertise and insights, and together offering unrivalled depth and breadth of experience as a team.")
 st.write("Chat privately with our AI about your background and MBA goals, to work out who is best placed to help you.")
-st.warning('This demo AI agent is currently trained on fictional movie characters, not MBA consultants yet!', icon="⚠️")
+st.warning('This demo AI agent is currently trained on fictional movie characters, not real MBA consultants yet!', icon="⚠️")
 
 if "answers" not in st.session_state: 
     st.session_state.answers = []
@@ -18,7 +18,7 @@ client = OpenAI(api_key=st.secrets["openai_key"])
 def submit_enquiry():
     enquiry = f"I need help applying to MBA schools. My goals are: {goals}. My background: {background}."
 
-    prompt = f"You are the receptionist at Fortuna Admissions, the dream team of fictional movie characters and former Admissions Directors from the world\'s top business schools, providing advisory services to help MBA applicants strengthen their profile, position their application and target the best schools. Respond to the following enquiry from an MBA applicant with 3 answers, each from a fictional movie character {version}, each giving an in-character response to the enquiry. For each response, introduce yourself, compliment the applicant on a particular aspect of their background or experience, and explain how your own experience is relevant to helping the applicant, then explain the help available, including essay editing and mock interviews, asking an insightful and deeply probing hypothetical question about the background of the applicant as an example of what might be asked for an essay or mock interview. Finally mention a date and time in {country} when the character is next available for a consultation, and ask for the applicant to provide contact details as a next step. Separate each response with the string <hr>. Here's the enquiry: {enquiry}."
+    prompt = f"You are the receptionist at Fortuna Admissions, the dream team of fictional movie characters and former Admissions Directors from the world\'s top business schools, providing advisory services to help MBA applicants strengthen their profile, position their application and target the best schools. Respond to the following enquiry from an MBA applicant with 3 answers, each from a fictional movie character {version}, each giving an in-character response to the enquiry. For each response, introduce yourself, compliment the applicant on a particular aspect of their background or experience, and explain how your own experience is relevant to helping the applicant, then explain the help available, including essay editing and mock interviews, asking an insightful and deeply probing hypothetical question about the background of the applicant as an example of what might be asked for an essay or mock interview. Finally mention a precise upcoming time in {country} when you are available for a consultation, and ask for the applicant to provide contact details as a next step. Separate each response with the string <hr>. Here's the enquiry: {enquiry}."
 
     ai_response = client.chat.completions.create(
         model="gpt-4o-mini",
