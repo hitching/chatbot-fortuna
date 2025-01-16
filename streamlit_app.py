@@ -87,7 +87,7 @@ if st.session_state.answers:
 
             if 'Heidi Hillis' in answer:
                 answer = answer.replace('Heidi Hillis', '<a href="https://fortunaadmissions.com/team-member/heidi-hillis/" target="_blank">Heidi Hillis</a>')
-                st.html('<a href="https://fortunaadmissions.com/team-member/heidi-hillis/" target="_blank"><img src="https://fortunaadmissions.com/wp-content/uploads/2017/08/heidi-cropped.jpg" width="100%" /></a>')
+                st.html('<a href="https://fortunaadmissions.com/team-member/heidi-hillis/" target="_blank"><img src="https://poetsandquants.com/wp-content/uploads/sites/5/2015/11/Headshots-420x420.jpg" width="100%" /></a>')
 
             st.markdown(answer, unsafe_allow_html=True)
 
@@ -97,6 +97,15 @@ if st.session_state.answers:
 
             if 'Heidi Hillis' in answer:
                 st.html('<hr>')
+                st.html('<em>"Excellent Advisor - Stanford GSB Admit (Class Of 2027)"</em>')
+                st.html('⭐⭐⭐⭐⭐ <small><a href="https://poetsandquants.com/consultant/heidi-hillis/" target="_blank">3 weeks ago</a></small>')
+
+                st.html('<hr>')
+                st.html('<em>"Best Coach I Could Have Asked For! Best Coach! (Stanford / Columbia)"</em>')
+                st.html('⭐⭐⭐⭐⭐ <small><a href="https://poetsandquants.com/consultant/heidi-hillis/" target="_blank">1 month ago</a></small>')
+
+                st.html('<hr>')
                 st.html('<b>Recent articles by Heidi</b>')
                 st.html('<a href="https://fortunaadmissions.com/how-to-create-a-career-vision-for-your-mba-application/" target="_blank">How to Create a Career Vision For Your MBA Application</a>')
+                st.html('<a href="https://fortunaadmissions.com/how-to-create-an-mba-career-vision-long-term-vs-short-term-goals/" target="_blank">MBA Goals: Long Term Vs. Short Term Career Vision</a>')
                 st.html('<a href="https://fortunaadmissions.com/author/heidi/" target="_blank">More...</a>')
